@@ -43,7 +43,6 @@ claude plugin install claude-usage@claude-usage-skill
 
 _Note: You may need to restart the app or start a new Code session for the new features to fully load._
 
-
 **Updating:**
 If you need to update to a newer version in the future, run these commands:
 
@@ -51,6 +50,45 @@ If you need to update to a newer version in the future, run these commands:
 claude plugin marketplace update claude-usage-skill
 claude plugin update claude-usage@claude-usage-skill
 ```
+
+## Usage
+
+Once installed you can do:
+
+```text
+❯ what is your current plan usage?
+```
+
+And Claude can now report back: 
+
+```text
+I'll check your current plan usage.
+
+⏺ Skill(claude-usage:get-usage)
+Successfully loaded skill · 1 tool allowed
+
+Here's your current plan usage (you're on a Claude subscription):
+
+┌────────────────────────────┬──────┬─────────────────────┐
+│           Window           │ Used │       Resets        │
+├────────────────────────────┼──────┼─────────────────────┤
+│ Current session (5h)       │ 13%  │ Jun 30, 12:09pm CDT │
+├────────────────────────────┼──────┼─────────────────────┤
+│ Current week (all models)  │ 7%   │ Jul 2, 8:59pm CDT   │
+├────────────────────────────┼──────┼─────────────────────┤
+│ Current week (Sonnet only) │ 0%   │ Jul 2, 9:00pm CDT   │
+└────────────────────────────┴──────┴─────────────────────┘
+
+You've got plenty of headroom across all three windows.
+
+What's driving usage recently:
+- Last 24h: 320 requests across 7 sessions — 89% from subagent-heavy sessions, 59% at >150k context
+- Last 7d: 1,047 requests across 14 sessions — 82% at >150k context, 74% from long (8+ hour) sessions
+
+The main cost drivers are large-context, long-running, subagent-heavy sessions. Nothing to worry about right now given how low all three windows are, but that's where to ease off if a window starts filling up.
+```
+
+You can use this on-demand, or chain it together with other Skills or agents to intelligently tune your usage of high-token operations like workflows, Agent Teams, etc.
 
 ## Requirements
 
