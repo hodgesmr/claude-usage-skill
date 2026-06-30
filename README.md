@@ -6,7 +6,7 @@ It works by calling Claude Code's own `/usage` report through the CLI. Claude Co
 
 ## How it works
 
-The skill's body is a single line:
+The skill's body is primarily just:
 
 ```
 !`claude -p "/usage"`
