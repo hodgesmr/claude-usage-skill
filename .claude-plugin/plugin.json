@@ -3,9 +3,10 @@
   "description": "An Agent Skill that lets Claude check its own Claude Code plan usage and rate limits on demand, using the CLI's /usage report.",
   "version": "0.1.0",
   "author": {
-    "name": "hodgesmr"
+    "name": "Matt Hodges"
   },
   "homepage": "https://github.com/hodgesmr/claude-usage-skill",
   "repository": "https://github.com/hodgesmr/claude-usage-skill",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "keywords": ["claude", "claude code", "usage", "rate limits", "plan usage", "quota"]
 }

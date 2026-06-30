@@ -1,15 +1,21 @@
 {
-  "name": "hodgesmr",
+  "name": "claude-usage-skill",
   "owner": {
-    "name": "hodgesmr",
-    "url": "https://github.com/hodgesmr"
+    "name": "Matt Hodges"
+  },
+  "metadata": {
+    "description": "Claude plan usage and rate-limit reporting skill for Claude Code"
   },
   "plugins": [
     {
       "name": "claude-usage",
       "source": "./",
-      "description": "An Agent Skill that lets Claude check its own Claude Code plan usage and rate limits on demand.",
-      "version": "0.1.0"
+      "description": "An Agent Skill that lets Claude check its own Claude Code plan usage and rate limits on demand, using the CLI's /usage report. Use when you need to know how close you are to a usage limit or when the user asks about plan or rate-limit usage.",
+      "version": "0.1.0",
+      "homepage": "https://github.com/hodgesmr/claude-usage-skill",
+      "repository": "https://github.com/hodgesmr/claude-usage-skill",
+      "license": "BSD-3-Clause",
+      "keywords": ["claude", "claude code", "usage", "rate limits", "plan usage", "quota"]
     }
   ]
 }

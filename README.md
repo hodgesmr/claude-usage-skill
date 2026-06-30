@@ -44,7 +44,7 @@ As a plugin. The repo is `claude-usage-skill`; the plugin it ships is named `cla
 
 ```bash
 claude plugin marketplace add hodgesmr/claude-usage-skill
-claude plugin install claude-usage@hodgesmr
+claude plugin install claude-usage@claude-usage-skill
 ```
 
 ## Requirements
@@ -63,7 +63,7 @@ It depends on `claude -p "/usage"` returning the report as a client-side command
 ## Uninstall
 
 ```bash
-claude plugin uninstall claude-usage@hodgesmr
+claude plugin uninstall claude-usage@claude-usage-skill
 ```
 
 ## License
