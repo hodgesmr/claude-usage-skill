@@ -54,7 +54,7 @@ claude plugin update claude-usage@claude-usage-skill
 
 ## Requirements
 
-- The `claude` CLI on `PATH`, since the skill calls it.
+- The `claude` CLI on `PATH`, authenticated, since the skill calls it.
 - A Pro or Max plan, which is what `/usage` reports on.
 
 ## Notes
