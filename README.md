@@ -29,22 +29,27 @@ That covers the session window, the weekly all-models window, and the weekly Son
 
 The skill leaves model invocation on, so its description loads into context each session and Claude can reach for it when usage is relevant. You can also run it yourself as `/claude-usage:get-usage`.
 
-## What's in here
-
-| Path | Role |
-|------|------|
-| `.claude-plugin/plugin.json` | Plugin manifest |
-| `.claude-plugin/marketplace.json` | Lets this repo serve as its own one-plugin marketplace |
-| `skills/get-usage/SKILL.md` | The skill: runs `claude -p "/usage"` and pulls the report into context |
-| `README.md` | This file |
-
 ## Install
 
-As a plugin. The repo is `claude-usage-skill`; the plugin it ships is named `claude-usage`.
+You can install this plugin either through Claude Desktop's Code tab, or directly in your terminal if you use Claude Code.
 
 ```bash
+# First, tell Claude where to find this plugin
 claude plugin marketplace add hodgesmr/claude-usage-skill
+
+# Next, install the plugin
 claude plugin install claude-usage@claude-usage-skill
+```
+
+_Note: You may need to restart the app or start a new Code session for the new features to fully load._
+
+
+**Updating:**
+If you need to update to a newer version in the future, run these commands:
+
+```bash
+claude plugin marketplace update claude-usage-skill
+claude plugin update claude-usage@claude-usage-skill
 ```
 
 ## Requirements
