@@ -65,3 +65,7 @@ It depends on `claude -p "/usage"` returning the report as a client-side command
 ```bash
 claude plugin uninstall claude-usage@hodgesmr
 ```
+
+## License
+
+BSD 3-Clause. See [LICENSE](LICENSE).

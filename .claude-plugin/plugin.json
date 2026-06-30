@@ -6,5 +6,6 @@
     "name": "hodgesmr"
   },
   "homepage": "https://github.com/hodgesmr/claude-usage-skill",
-  "repository": "https://github.com/hodgesmr/claude-usage-skill"
+  "repository": "https://github.com/hodgesmr/claude-usage-skill",
+  "license": "BSD-3-Clause"
 }
