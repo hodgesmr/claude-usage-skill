@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Editor cruft
+.idea/
+.vscode/
+*.swp
+
+# Claude Code local session and harness state (not part of the plugin)
+.claude/

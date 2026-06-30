@@ -1,0 +1,10 @@
+{
+  "name": "claude-usage",
+  "description": "An Agent Skill that lets Claude check its own Claude Code plan usage and rate limits on demand, using the CLI's /usage report.",
+  "version": "0.1.0",
+  "author": {
+    "name": "hodgesmr"
+  },
+  "homepage": "https://github.com/hodgesmr/claude-usage-skill",
+  "repository": "https://github.com/hodgesmr/claude-usage-skill"
+}

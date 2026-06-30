@@ -1,0 +1,15 @@
+{
+  "name": "hodgesmr",
+  "owner": {
+    "name": "hodgesmr",
+    "url": "https://github.com/hodgesmr"
+  },
+  "plugins": [
+    {
+      "name": "claude-usage",
+      "source": "./",
+      "description": "An Agent Skill that lets Claude check its own Claude Code plan usage and rate limits on demand.",
+      "version": "0.1.0"
+    }
+  ]
+}
