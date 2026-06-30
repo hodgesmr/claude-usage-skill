@@ -47,14 +47,6 @@ claude plugin marketplace add hodgesmr/claude-usage-skill
 claude plugin install claude-usage@hodgesmr
 ```
 
-Or from inside Claude Code, run `/plugin marketplace add hodgesmr/claude-usage-skill` then `/plugin install claude-usage@hodgesmr`. Restart and the skill is live.
-
-For local development before the repo is pushed:
-
-```bash
-claude --plugin-dir .
-```
-
 ## Requirements
 
 - The `claude` CLI on `PATH`, since the skill calls it.
