@@ -12,22 +12,11 @@ The skill's body is primarily just:
 !`claude -p "/usage"`
 ```
 
-When Claude invokes the skill, that runs the CLI without an interactive session, and `/usage` prints the live report into the turn:
+When Claude invokes the skill, that runs the CLI without an interactive session, and `/usage` prints the live report into the turn.
 
-```
-Current session: 3% used · resets Jun 30 at 12:09pm
-Current week (all models): 6% used · resets Jul 2 at 8:59pm
-Current week (Sonnet only): 0% used · resets Jul 2 at 8:59pm
+It covers the session window, the weekly all-models window, and the weekly Sonnet-only window, each with a reset time in your local zone and a breakdown of what is driving usage. It returns in about 1.5 seconds. Because `/usage` is rendered by the client rather than the model, running it costs almost no model tokens.
 
-What's contributing to your limits usage?
-Last 24h · 206 requests · 4 sessions
-  80% of your usage came from subagent-heavy sessions
-  ...
-```
-
-That covers the session window, the weekly all-models window, and the weekly Sonnet-only window, each with a reset time in your local zone and a breakdown of what is driving usage. It returns in about 1.5 seconds. Because `/usage` is rendered by the client rather than the model, running it costs almost no model tokens.
-
-The skill leaves model invocation on, so its description loads into context each session and Claude can reach for it when usage is relevant. You can also run it yourself as `/claude-usage:get-usage`.
+You can also run it yourself as `/claude-usage:get-usage`, but the built-in `/usage` is also still available.
 
 ## Install
 
